@@ -2,39 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* AutoLimpeza Pro Design System
+Professional cleaning service theme with blues, greens and trust-building elements
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Core brand colors - Professional cleaning blue theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 40% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Primary: Professional cleaning blue */
+    --primary: 207 90% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 207 90% 64%;
+    
+    /* Secondary: Clean green accent */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 142 45% 58%;
+    
+    /* Trust/Premium colors */
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220 8.9% 46.1%;
+    
+    /* Neutral system */
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 207 90% 54%;
+    
+    /* Success for cleaning results */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning for urgent services */
+    --warning: 48 96% 53%;
+    --warning-foreground: 25 95% 10%;
+    
+    /* Premium service accent */
+    --premium: 262 83% 58%;
+    --premium-foreground: 0 0% 100%;
+    
+    /* Gradients for modern look */
+    --gradient-primary: linear-gradient(135deg, hsl(207 90% 54%) 0%, hsl(207 90% 64%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 45% 58%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(207 90% 54%) 0%, hsl(142 76% 36%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14.3% 95.9%) 100%);
+    
+    /* Shadows for depth */
+    --shadow-elegant: 0 10px 30px -10px hsl(207 90% 54% / 0.3);
+    --shadow-glow: 0 0 40px hsl(207 90% 64% / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(220 13% 91% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
