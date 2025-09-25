@@ -134,7 +134,7 @@ const ServicesSection = () => {
 
         {/* Mobile-First CTA Section */}
         <div className="text-center mt-12 sm:mt-16">
-          <Button asChild size="lg" variant="outline" className="px-6 sm:px-8 w-full sm:w-auto">
+          <Button asChild size="lg" variant="ghost" className="px-6 sm:px-8 w-full sm:w-auto border border-border hover:bg-accent hover:text-accent-foreground bg-transparent">
             <Link to="/servicos" className="flex items-center justify-center gap-2">
               Ver Todos os Serviços
               <FiArrowRight className="w-4 h-4" />

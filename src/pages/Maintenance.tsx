@@ -25,7 +25,7 @@ const Maintenance = () => {
             <Button asChild size="lg" className="bg-white text-secondary hover:bg-white/90">
               <Link to="/agendamento">Agendar Manutenção</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
+            <Button asChild size="lg" variant="ghost" className="border border-white/20 text-white hover:bg-white/10 hover:text-white bg-transparent">
               <Link to="/calculadora">Calcular Preço</Link>
             </Button>
           </div>

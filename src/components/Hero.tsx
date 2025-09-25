@@ -53,9 +53,9 @@ const Hero = () => {
               </Button>
               <Button 
                 asChild 
-                variant="outline" 
+                variant="ghost" 
                 size="lg" 
-                className="border-white/20 text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
+                className="border border-white/20 text-white hover:bg-white/10 hover:text-white bg-transparent px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
               >
                 <Link to="/calculadora">Calcular Preço</Link>
               </Button>

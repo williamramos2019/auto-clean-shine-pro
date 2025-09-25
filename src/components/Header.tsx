@@ -178,9 +178,9 @@ const Header = () => {
                 <Button asChild className="w-full bg-gradient-secondary">
                   <Link to="/agendamento">Agendar Agora</Link>
                 </Button>
-                <Button asChild variant="outline" className="w-full">
-                  <Link to="/calculadora">Calcular Preço</Link>
-                </Button>
+            <Button asChild variant="ghost" className="w-full border border-border hover:bg-accent hover:text-accent-foreground bg-transparent">
+              <Link to="/calculadora">Calcular Preço</Link>
+            </Button>
               </div>
             </div>
           )}
