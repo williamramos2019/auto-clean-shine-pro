@@ -105,7 +105,7 @@ const Header = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`px-2 py-2 rounded-md text-xs font-medium transition-smooth hover:bg-accent hover:text-accent-foreground text-center ${
+                    className={`px-2 py-2 rounded-md text-xs font-medium transition-all duration-300 ease-out hover:bg-accent hover:text-accent-foreground text-center ${
                       isActive(item.path)
                         ? "bg-primary text-primary-foreground"
                         : "text-foreground"
@@ -120,7 +120,7 @@ const Header = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`px-2 py-2 rounded-md text-xs font-medium transition-smooth hover:bg-accent hover:text-accent-foreground text-center ${
+                    className={`px-2 py-2 rounded-md text-xs font-medium transition-all duration-300 ease-out hover:bg-accent hover:text-accent-foreground text-center ${
                       isActive(item.path)
                         ? "bg-primary text-primary-foreground"
                         : "text-foreground"
@@ -142,7 +142,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="xl:hidden p-2 rounded-md hover:bg-accent transition-smooth"
+              className="xl:hidden p-2 rounded-md hover:bg-accent transition-all duration-300 ease-out"
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}
             >
@@ -162,7 +162,7 @@ const Header = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`px-3 py-3 rounded-md text-sm font-medium transition-smooth text-center ${
+                    className={`px-3 py-3 rounded-md text-sm font-medium transition-all duration-300 ease-out text-center ${
                       isActive(item.path)
                         ? "bg-primary text-primary-foreground"
                         : "text-foreground hover:bg-accent hover:text-accent-foreground"

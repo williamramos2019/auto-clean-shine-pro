@@ -80,11 +80,11 @@ const FAQ = () => {
               const isOpen = openItems.includes(item.id);
               
               return (
-                <Card key={item.id} className="border-0 shadow-card hover:shadow-elegant transition-smooth">
+                <Card key={item.id} className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 ease-out">
                   <CardContent className="p-0">
                     <button
                       onClick={() => toggleItem(item.id)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-accent transition-smooth"
+                      className="w-full p-6 text-left flex items-center justify-between hover:bg-accent transition-all duration-300 ease-out"
                     >
                       <h3 className="text-lg font-semibold text-foreground pr-4">
                         {item.question}
@@ -128,13 +128,13 @@ const FAQ = () => {
                     href="https://wa.me/5511999999999"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-white/90 transition-smooth"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-white/90 transition-all duration-300 ease-out"
                   >
                     💬 WhatsApp
                   </a>
                   <a
                     href="tel:+551133333333"
-                    className="inline-flex items-center justify-center px-6 py-3 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-smooth"
+                    className="inline-flex items-center justify-center px-6 py-3 border border-white/20 text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-300 ease-out"
                   >
                     📞 Telefone
                   </a>

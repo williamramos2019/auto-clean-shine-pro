@@ -22,7 +22,7 @@ const ServicesSection = () => {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id as 'limpeza' | 'manutencao')}
-                className={`px-4 sm:px-8 py-3 font-semibold rounded-full transition-smooth w-full sm:w-auto ${
+                className={`px-4 sm:px-8 py-3 font-semibold rounded-full transition-all duration-300 ease-out w-full sm:w-auto ${
                   activeCategory === category.id
                     ? 'bg-primary text-primary-foreground shadow-elegant'
                     : 'bg-white text-foreground hover:bg-accent border border-border'
@@ -53,7 +53,7 @@ const ServicesSection = () => {
           {currentServices.map((service, index) => (
             <Card 
               key={service.id} 
-              className={`group hover:shadow-elegant transition-smooth border-0 bg-white relative overflow-hidden animate-mobile-slide-up`}
+              className={`group hover:shadow-elegant transition-all duration-300 ease-out border-0 bg-white relative overflow-hidden animate-mobile-slide-up`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {service.popular && (
@@ -66,7 +66,7 @@ const ServicesSection = () => {
               )}
               
               <CardHeader className="pb-3 sm:pb-4 p-4 sm:p-6">
-                <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-smooth pr-16 sm:pr-20">
+                <CardTitle className="text-lg sm:text-xl font-bold group-hover:text-primary transition-all duration-300 ease-out pr-16 sm:pr-20">
                   {service.title}
                 </CardTitle>
                 <p className="text-sm sm:text-base text-muted-foreground line-clamp-2">

@@ -120,7 +120,7 @@ const BookingSystem = () => {
                       <button
                         key={day.date}
                         onClick={() => setSelectedDate(day.date)}
-                        className={`p-3 rounded-lg text-center transition-smooth border ${
+                        className={`p-3 rounded-lg text-center transition-all duration-300 ease-out border ${
                           selectedDate === day.date
                             ? 'border-primary bg-primary text-white'
                             : 'border-border hover:border-primary hover:bg-accent'
@@ -146,7 +146,7 @@ const BookingSystem = () => {
                         key={slot.time}
                         onClick={() => slot.available && setSelectedTime(slot.time)}
                         disabled={!slot.available}
-                        className={`p-3 rounded-lg text-center transition-smooth border ${
+                        className={`p-3 rounded-lg text-center transition-all duration-300 ease-out border ${
                           selectedTime === slot.time
                             ? 'border-primary bg-primary text-white'
                             : slot.available

@@ -47,21 +47,21 @@ const Footer = () => {
             <div className="flex justify-center sm:justify-start gap-3 sm:gap-4">
               <a 
                 href="#" 
-                className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth"
+                className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300 ease-out"
                 aria-label="Facebook"
               >
                 <FiFacebook className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth"
+                className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300 ease-out"
                 aria-label="Instagram"
               >
                 <FiInstagram className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth"
+                className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300 ease-out"
                 aria-label="Twitter"
               >
                 <FiTwitter className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -77,7 +77,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.href} 
-                    className="text-sm sm:text-base text-white/80 hover:text-primary transition-smooth block py-1"
+                    className="text-sm sm:text-base text-white/80 hover:text-primary transition-all duration-300 ease-out block py-1"
                   >
                     {link.name}
                   </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                 <li key={service.name}>
                   <Link 
                     to={service.href} 
-                    className="text-sm sm:text-base text-white/80 hover:text-primary transition-smooth block py-1"
+                    className="text-sm sm:text-base text-white/80 hover:text-primary transition-all duration-300 ease-out block py-1"
                   >
                     {service.name}
                   </Link>
@@ -183,10 +183,10 @@ const Footer = () => {
             </div>
             
             <div className="flex flex-col xs:flex-row items-center gap-3 sm:gap-6 text-xs sm:text-sm order-1 sm:order-2">
-              <Link to="/politica-privacidade" className="text-white/80 hover:text-primary transition-smooth">
+              <Link to="/politica-privacidade" className="text-white/80 hover:text-primary transition-all duration-300 ease-out">
                 Política de Privacidade
               </Link>
-              <Link to="/termos-uso" className="text-white/80 hover:text-primary transition-smooth">
+              <Link to="/termos-uso" className="text-white/80 hover:text-primary transition-all duration-300 ease-out">
                 Termos de Uso
               </Link>
             </div>
@@ -202,10 +202,10 @@ const Footer = () => {
               🍪 Utilizamos cookies para melhorar sua experiência e personalizar conteúdo.
             </div>
             <div className="flex flex-col xs:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
-              <button className="px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm bg-white/20 rounded hover:bg-white/30 transition-smooth">
+              <button className="px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm bg-white/20 rounded hover:bg-white/30 transition-all duration-300 ease-out">
                 Configurar
               </button>
-              <button className="px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm bg-primary rounded hover:bg-primary-glow transition-smooth">
+              <button className="px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm bg-primary rounded hover:bg-primary-glow transition-all duration-300 ease-out">
                 Aceitar Todos
               </button>
             </div>

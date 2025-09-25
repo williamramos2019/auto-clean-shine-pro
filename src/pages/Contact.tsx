@@ -80,7 +80,7 @@ const Contact = () => {
 
               {/* Contact Cards */}
               <div className="space-y-6">
-                <Card className="border-0 shadow-card hover:shadow-elegant transition-smooth">
+                <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 ease-out">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
@@ -95,7 +95,7 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-card hover:shadow-elegant transition-smooth">
+                <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 ease-out">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center">
@@ -110,7 +110,7 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-card hover:shadow-elegant transition-smooth">
+                <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 ease-out">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
@@ -125,7 +125,7 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-card hover:shadow-elegant transition-smooth">
+                <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 ease-out">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center">
@@ -181,19 +181,19 @@ const Contact = () => {
                 <div className="flex gap-4">
                   <a
                     href="#"
-                    className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:shadow-glow transition-smooth"
+                    className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:shadow-glow transition-all duration-300 ease-out"
                   >
                     <FiFacebook className="w-6 h-6" />
                   </a>
                   <a
                     href="#"
-                    className="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center text-white hover:shadow-glow transition-smooth"
+                    className="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center text-white hover:shadow-glow transition-all duration-300 ease-out"
                   >
                     <FiInstagram className="w-6 h-6" />
                   </a>
                   <a
                     href="#"
-                    className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:shadow-glow transition-smooth"
+                    className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white hover:shadow-glow transition-all duration-300 ease-out"
                   >
                     <FiTwitter className="w-6 h-6" />
                   </a>

@@ -125,7 +125,7 @@ const Calculator = () => {
                         <div
                           key={option.value}
                           onClick={() => setCalculator({...calculator, urgency: option.value as any})}
-                          className={`p-3 rounded-lg border cursor-pointer transition-smooth ${
+                          className={`p-3 rounded-lg border cursor-pointer transition-all duration-300 ease-out ${
                             calculator.urgency === option.value
                               ? 'border-primary bg-primary/5'
                               : 'border-border hover:border-accent'
@@ -153,7 +153,7 @@ const Calculator = () => {
                         <div
                           key={option.value}
                           onClick={() => setCalculator({...calculator, schedule: option.value as any})}
-                          className={`p-3 rounded-lg border cursor-pointer transition-smooth ${
+                          className={`p-3 rounded-lg border cursor-pointer transition-all duration-300 ease-out ${
                             calculator.schedule === option.value
                               ? 'border-primary bg-primary/5'
                               : 'border-border hover:border-accent'

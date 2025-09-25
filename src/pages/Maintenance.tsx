@@ -37,7 +37,7 @@ const Maintenance = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {maintenanceServices.map((service) => (
-              <Card key={service.id} className="group hover:shadow-elegant transition-smooth border-0 bg-white relative overflow-hidden">
+              <Card key={service.id} className="group hover:shadow-elegant transition-all duration-300 ease-out border-0 bg-white relative overflow-hidden">
                 {service.popular && (
                   <div className="absolute top-4 right-4 z-10">
                     <Badge className="bg-warning text-warning-foreground">
@@ -54,7 +54,7 @@ const Maintenance = () => {
                     <Badge variant="outline">Manutenção</Badge>
                   </div>
                   
-                  <CardTitle className="text-xl font-bold group-hover:text-primary transition-smooth">
+                  <CardTitle className="text-xl font-bold group-hover:text-primary transition-all duration-300 ease-out">
                     {service.title}
                   </CardTitle>
                   <p className="text-muted-foreground">

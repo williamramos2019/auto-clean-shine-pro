@@ -73,10 +73,10 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-primary': 'var(--gradient-primary)',
-        'gradient-secondary': 'var(--gradient-secondary)',
-        'gradient-hero': 'var(--gradient-hero)',
-        'gradient-card': 'var(--gradient-card)',
+        'gradient-primary': 'linear-gradient(135deg, hsl(207 90% 54%), hsl(207 90% 64%))',
+        'gradient-secondary': 'linear-gradient(135deg, hsl(142 76% 36%), hsl(142 45% 58%))',
+        'gradient-hero': 'linear-gradient(135deg, hsl(207 90% 54%), hsl(142 76% 36%))',
+        'gradient-card': 'linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14.3% 95.9%))',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',
@@ -84,8 +84,8 @@ export default {
         'card': 'var(--shadow-card)',
       },
       transitionTimingFunction: {
-        'smooth': 'var(--transition-smooth)',
-        'bounce': 'var(--transition-bounce)',
+        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
       },
       borderRadius: {
         lg: "var(--radius)",

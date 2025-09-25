@@ -37,7 +37,7 @@ const Services = () => {
             <div className="flex bg-muted rounded-lg p-2">
               <button
                 onClick={() => setActiveCategory('all')}
-                className={`px-6 py-3 rounded-md font-semibold transition-smooth ${
+                className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ease-out ${
                   activeCategory === 'all'
                     ? 'bg-primary text-primary-foreground shadow-md'
                     : 'text-muted-foreground hover:text-foreground'
@@ -47,7 +47,7 @@ const Services = () => {
               </button>
               <button
                 onClick={() => setActiveCategory('limpeza')}
-                className={`px-6 py-3 rounded-md font-semibold transition-smooth ${
+                className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ease-out ${
                   activeCategory === 'limpeza'
                     ? 'bg-primary text-primary-foreground shadow-md'
                     : 'text-muted-foreground hover:text-foreground'
@@ -57,7 +57,7 @@ const Services = () => {
               </button>
               <button
                 onClick={() => setActiveCategory('manutencao')}
-                className={`px-6 py-3 rounded-md font-semibold transition-smooth ${
+                className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ease-out ${
                   activeCategory === 'manutencao'
                     ? 'bg-primary text-primary-foreground shadow-md'
                     : 'text-muted-foreground hover:text-foreground'
@@ -71,7 +71,7 @@ const Services = () => {
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredServices.map((service) => (
-              <Card key={service.id} className="group hover:shadow-elegant transition-smooth border-0 bg-white relative overflow-hidden">
+              <Card key={service.id} className="group hover:shadow-elegant transition-all duration-300 ease-out border-0 bg-white relative overflow-hidden">
                 {service.popular && (
                   <div className="absolute top-4 right-4 z-10">
                     <Badge className="bg-warning text-warning-foreground">
@@ -87,7 +87,7 @@ const Services = () => {
                       <Badge variant="outline" className="mb-3">
                         {service.category === 'limpeza' ? 'Limpeza' : 'Manutenção'}
                       </Badge>
-                      <CardTitle className="text-xl font-bold group-hover:text-primary transition-smooth">
+                      <CardTitle className="text-xl font-bold group-hover:text-primary transition-all duration-300 ease-out">
                         {service.title}
                       </CardTitle>
                     </div>

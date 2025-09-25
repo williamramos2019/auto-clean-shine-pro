@@ -145,7 +145,7 @@ const Gallery = () => {
                         {/* Comparison Toggle */}
                         <button
                           onClick={() => toggleComparison(filteredItems[currentSlide].id)}
-                          className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full hover:bg-white/30 transition-smooth flex items-center gap-2"
+                          className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-300 ease-out flex items-center gap-2"
                         >
                           🔄 {showComparison[filteredItems[currentSlide].id] ? 'Depois' : 'Antes'}
                         </button>
@@ -182,13 +182,13 @@ const Gallery = () => {
               <>
                 <button
                   onClick={prevSlide}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-smooth"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 ease-out"
                 >
                   <FiArrowLeft className="w-5 h-5" />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-smooth"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 ease-out"
                 >
                   <FiArrowRight className="w-5 h-5" />
                 </button>
@@ -201,7 +201,7 @@ const Gallery = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-smooth ${
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ease-out ${
                     currentSlide === index ? 'bg-primary' : 'bg-muted'
                   }`}
                 />
@@ -215,7 +215,7 @@ const Gallery = () => {
           <h3 className="text-2xl font-bold text-center mb-12">Nossos Trabalhos</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredItems.map((item) => (
-              <Card key={item.id} className="group border-0 shadow-card hover:shadow-elegant transition-smooth overflow-hidden">
+              <Card key={item.id} className="group border-0 shadow-card hover:shadow-elegant transition-all duration-300 ease-out overflow-hidden">
                 <div className="relative h-64">
                   <div 
                     className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
@@ -230,7 +230,7 @@ const Gallery = () => {
                   {item.isBeforeAfter && (
                     <button
                       onClick={() => toggleComparison(item.id)}
-                      className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm hover:bg-black/70 transition-smooth"
+                      className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm hover:bg-black/70 transition-all duration-300 ease-out"
                     >
                       🔄 Clique para comparar
                     </button>
