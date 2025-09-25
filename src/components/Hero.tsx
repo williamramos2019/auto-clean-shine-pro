@@ -13,12 +13,12 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-hero min-h-screen flex items-center">
+    <section className="relative overflow-hidden bg-gradient-hero min-h-[90vh] flex items-center">
       <div className="absolute inset-0 bg-black/20"></div>
       
       <div className="container mx-auto px-4 py-8 relative z-10 w-full">
         {/* Mobile-First Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[80vh]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[60vh]">
           
           {/* Content - Mobile First */}
           <div className="lg:col-span-6 xl:col-span-7 text-white order-2 lg:order-1">
@@ -81,7 +81,7 @@ const Hero = () => {
               <img 
                 src={heroImage} 
                 alt="Limpeza profissional de estofados automotivos"
-                className="w-full h-64 sm:h-80 lg:h-[500xl:h-[600px] object-cover"
+                className="w-full h-64 sm:h-80 lg:h-[500px] xl:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
